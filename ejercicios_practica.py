@@ -42,7 +42,7 @@ def ej1():
         if x == 10:
             break
         print("Valor de x =", x)
-        x += 1
+        x -= 1
         # Coloque la línea de código para que "X" decremente "1"
 
 
