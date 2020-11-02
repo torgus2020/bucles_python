@@ -37,12 +37,20 @@ def ej1():
 
     # inicio = ....
     # fin = ....
-
-    # cantidad_numeros ....
-    # sumatoria ....
-
+    inicio = int(input('Ingrese el primero número de la secuencia\n'))
+    final = int(input('Ingrese el último número de la secuencia\n'))
+       # cantidad_numeros ....
+    secuencia = (final - inicio)
+    
+     # sumatoria ....
+    contador = 0
+    sumatoria = 0
     # bucle.....
-
+    for i in range(final - 1):
+        contador += 1
+        sumatoria += contador
+        print("el numero es", contador, "y la sumatoria es", sumatoria)
+        
     # Al terminar el bucle calcular el promedio como:
     # promedio = sumatoria / cantidad_numeros
 
@@ -249,7 +257,7 @@ def ej5():
 
 if __name__ == '__main__':
     print("Ejercicios de práctica")
-    #ej1()
+    ej1()
     #ej2()
     #ej3()
     #ej4()
