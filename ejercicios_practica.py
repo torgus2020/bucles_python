@@ -39,8 +39,6 @@ def ej1():
     # el valor de "x" decremente "1" en cada iteración
 
     while x >= 0:    # reemplace "condicion" por lo que crea necesario
-        if x == 10:
-            break
         print("Valor de x =", x)
         x -= 1
         # Coloque la línea de código para que "X" decremente "1"
@@ -149,8 +147,7 @@ def ej6():
     inicio = int(input('Ingrese el primero número de la secuencia\n'))
     final = int(input('Ingrese el último número de la secuencia\n'))
     # fin....
-    x = inicio
-    y = final
+    secuencia = final - inicio
     contador_positivo = 0
     contador_negativo = 0
     #cantidad_numeros_positivos = 0  
@@ -158,8 +155,8 @@ def ej6():
     #cantidad_numeros_negativos <= 0
 
     # for ... in range(....)
-    for x in range(x, y):
-        if x >= 0:
+    for i in range(inicio, final - 1):
+        if i >= 0:
             contador_positivo += 1
             print("los numeros positivo son:", contador_positivo)
         else:
